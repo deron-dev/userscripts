@@ -6,6 +6,7 @@
 // @author       deron
 // @match        https://www.youtube.com/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=youtube.com
+// @downloadURL  https://raw.githubusercontent.com/deron-dev/userscripts/refs/heads/master/hide-watched-youtube-videos.js
 // ==/UserScript==
 
 /** @type number */
