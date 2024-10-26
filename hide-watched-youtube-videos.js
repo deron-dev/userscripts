@@ -10,7 +10,7 @@
 // ==/UserScript==
 
 /** @type number */
-const MIN_WIDTH_PERCENT = 90;
+const MIN_PROGRESS_PERCENT = 90;
 /** @type number */
 const INTERVAL_SECONDS = 2.5;
 // const DEBUG_IMG = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Farmer_meme_with_apostrophe.jpg/1920px-Farmer_meme_with_apostrophe.jpg" // DEBUG
@@ -28,7 +28,7 @@ function removeWatchedVideos() {
             if (width == undefined) {
                 throw new Error("no progress bar width in computed style map");
             }
-            if (width.unit == "percent" && width.value >= MIN_WIDTH_PERCENT) {
+            if (width.unit == "percent" && width.value >= MIN_PROGRESS_PERCENT) {
                 // video.querySelector('img').setAttribute('src', DEBUG_IMG) // DEBUG
                 video.remove();
             }
