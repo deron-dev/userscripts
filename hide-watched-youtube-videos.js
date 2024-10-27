@@ -2,12 +2,13 @@
 // @name         Remove Watched YouTube Videos
 // @description  Remove Watched YouTube Videos
 // @namespace    http://tampermonkey.net/
-// @version      2024-10-26
+// @version      0.1.0
 // @author       deron
 // @match        https://www.youtube.com/
 // @match        https://www.youtube.com/feed/subscriptions
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=youtube.com
 // @downloadURL  https://raw.githubusercontent.com/deron-dev/userscripts/refs/heads/master/hide-watched-youtube-videos.js
+// @updateURL  https://raw.githubusercontent.com/deron-dev/userscripts/refs/heads/master/hide-watched-youtube-videos.js
 // ==/UserScript==
 
 /** @type number */
