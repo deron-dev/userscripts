@@ -2,7 +2,7 @@
 // @name         Remove YouTube Shorts
 // @description  Remove YouTube Shorts
 // @namespace    http://tampermonkey.net/
-// @version      0.1.0
+// @version      0.1.1
 // @author       deron
 // @match        https://www.youtube.com/feed/subscriptions
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=youtube.com
@@ -16,7 +16,6 @@ const INTERVAL_SECONDS = 2.5;
 let shortsRemoved = false;
 
 function removeShorts() {
-    console.log("removeShorts");
     let candidates = document.querySelectorAll(
         "ytd-rich-section-renderer.ytd-rich-grid-renderer",
     );
@@ -41,7 +40,6 @@ function removeShorts() {
     intervals.push(
         setInterval(() => {
             if (shortsRemoved) {
-                console.log("clearIntervals");
                 intervals.forEach((interval) => {
                     clearInterval(interval);
                 });
